@@ -500,9 +500,12 @@ def generate_bargraph():
 
 app.run(debug=True, use_reloader=False)
 
-if __name__ == '__main__':
-        app.run(debug=True, use_reloader=False)
-
 # if __name__ == '__main__':
-#     # Use 0.0.0.0 as the host to allow external access
-#     app.run(host='0.0.0.0', port=8080, debug=True, use_reloader=False)
+#         app.run(debug=True, use_reloader=False)
+
+if __name__ == '__main__':
+# Use 0.0.0.0 as the host to allow external access
+    app.run(debug=False, host='0.0.0.0')
+
+
+# , port=8080, debug=True, use_reloader=False
